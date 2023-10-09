@@ -113,6 +113,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: start;
+    height: 120px;
 }
 nav {
     display: flex;
@@ -120,11 +121,50 @@ nav {
     justify-content: space-between;
 }
 
-.img-hamburguesa{
+.btn-menu {
+    margin: 50px;
     display: flex;
-    margin: 5px;
-    padding: 30px;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    background: transparent;
+    gap: 15px;
+}
+
+.btn-menu div{
+    background: var(--color-secundario);
+    height: 2px;
+    width: 100%;
     border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+
+.btn-menu:hover div:first-child{
+    transform: rotate(45deg);
+}
+
+.btn-menu:hover div:nth-child(2){
+    opacity: 0;
+}
+
+.btn-menu:hover div:last-child{
+    transform: rotate(-45deg);
+}
+
+.btn-carrito{
+    background-color: var(--color-primario);
+    cursor: pointer;
+}  
+
+#cambioColor:focus {
+    background-color: var(--color-acento); /* Cambiar a un color diferente cuando se presiona */
+    outline: none;
+}
+
+.navegacion li a{
+    color: var(--color-neutro_claro);
 }
 
 .img-portada{
@@ -224,7 +264,7 @@ section img {
 }
 
 .card:hover {
-    transform: perspective(600px) rotateY(45deg);
+    transform: perspective(600px) rotateY(18deg);
     
 }
 
@@ -265,11 +305,6 @@ section img {
 }
 
 
-/*PRUEBA ANIMACION*/
-
-
-/*CIERRE PRUEBA*/
-
 .btn-jugar {
     display: flex;
     width: 103px;
@@ -280,6 +315,7 @@ section img {
     gap: 20px;
     border-radius: 8px;
     background: var(--color-secundario);
+    cursor: pointer;
 }
 
 .fat-footer{
@@ -356,7 +392,7 @@ section img {
     }
 
     .btn-menu div{
-        background: #F02B2B;
+        background: var(--color-secundario);
         height: 2px;
         width: 100%;
         border-radius: 5px;
@@ -375,23 +411,38 @@ section img {
     .btn-menu:hover div:last-child{
         transform: rotate(-45deg);
     }
+
+    .btn-carrito{
+        background-color: var(--color-primario);
+        cursor: pointer;
+    }  
+    
+    #cambioColor:focus {
+        background-color: var(--color-acento); /* Cambiar a un color diferente cuando se presiona */
+        outline: none;
+    }
+
+    .navegacion li a{
+        color: var(--color-neutro_claro);
+    }
+
     header{
         background-color: var(--color-primario);
         display: flex;
         justify-content: center;
         align-items: start;
-        height: 200px;
+        height: 100px;
     }
 
     .busqueda p{
-        color: #091021;
+        color: var(--color-primario);
     }
 
     .busqueda{
         display: flex;
         border-radius: 5px black solid;
-        background-color: #DDE3F0;
-        width: 100%;
+        background-color: var(--color-neutro_claro);
+        width: 150%;
         margin-top: 50px;
         justify-content: center;
         align-items: center;
@@ -426,8 +477,6 @@ section img {
         
     }
 
-
-    /*CORREGIR*/
     .texto {
         position: absolute;
         top: 70%;
@@ -535,6 +584,7 @@ line-height: normal;
 
 .redes {
     text-align: center;
+    margin-top: 10px;
     margin-left: 130px;
 }
 
@@ -577,7 +627,5 @@ line-height: normal;
 }
 
 
-.btn-carrito{
-    background-color: var(--color-primario);
-}
+
 }
