@@ -22,9 +22,12 @@
 
                     <div class="menu">
                         <ul class="navegacion">
-                            <li> <a href="juego.html">Cuatro en linea</a></li>
-                            <li> <a href="registro.html">Registrarse</a></li>
-                            <li><a href="login.html">Ingresar</a></li>
+                            <li>Inicio</li>
+                            <li>Juegos gratis</li>
+                            <li>Destacados</li>
+                            <li>Ofertas</li>
+                            <li>Nuevos</li>
+                            <li>Mis juegos</li>
                         </ul>
                     </div>
                 </div>
@@ -40,13 +43,19 @@
             </div>
 
             <div >
-                <img class="imagen-usuario" src="img/imagenUsuario.png" alt="imagenUsuario">
+                <button class="btn-usuario" id="toggleMenu"> <img class="imagen-usuario" src="img/imagenUsuario.png" alt="imagenUsuario"></button> 
             </div> 
            
         </header>
 
         <main>
             <div class="contenedor-portada">
+                
+                    <ul id="menu2" class="hidden">
+                        <li><a href="#">Mi carrito</a></li>
+                        <li><a href="registro.html">Registrarse</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
             <div class="imagen-portada"><img class="img-portada" src="img/portada.png" alt="portada"></div>
             <a href="juego.html"><p class="texto">Juega gratis cuatro en linea con los vengadores</p></a>
             </div>
@@ -181,7 +190,7 @@
                         </div>
                         <div class="precioYboton">
                             <p>$17100</p>
-                            <button id="cambioColor" class="btn-carrito"><img src="img/carrito.png" alt="carrito"></button>
+                            <button  class="btn-carrito"><img src="img/carrito.png" alt="carrito"></button>
                         </div>
                     </div>
 
@@ -192,7 +201,7 @@
                         </div>
                         <div class="precioYboton">
                             <p>$21500</p>
-                            <button id="cambioColor" class="btn-carrito"><img src="img/carrito.png" alt="carrito"></button>
+                            <button class="btn-carrito"><img src="img/carrito.png" alt="carrito"></button>
                         </div>
                     </div>
 
